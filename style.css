@@ -1,0 +1,156 @@
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --blue-light: #144899;
+  --blue: #144899;
+  --blue-super-strong: #030f40;
+  --brown: #801917;
+  --red: #eb1710;
+  --green: #3aa156;
+  --pink: #dcdcdc;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+/*Reset*/
+
+.nabvar-desktop-numbers {
+  display: none;
+}
+
+.nabvar__desktop__socila__media {
+  display: none;
+}
+
+.nabvar__desktop__links {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+/*Header*/
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2rem;
+}
+
+.navbar__mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__dropdown {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  --img1: scale(1);
+  --img2: scale(0);
+}
+
+.nav__dropdown:has(.dropdown:target) {
+  --img1: scale(0);
+  --img2: scale(1);
+  --clip: inset(0 0 0 0);
+}
+
+.nav--dropdown--container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "logo img";
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo--dropdown {
+  width: 110px;
+  grid-area: logo;
+}
+
+.nav--menu {
+  grid-area: img;
+  position: relative;
+  z-index: 1;
+  transform: var(--img1);
+}
+
+.nav-icon-secound {
+  transform: var(--img2);
+}
+
+.nav-icon {
+  width: 40px;
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: var(--brown);
+  width: 40%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  display: grid;
+  align-content: center;
+  gap: 10rem;
+  overflow-y: auto;
+  clip-path: var(--clip, inset(0 0 0 100%));
+  transition: clip-path 0.5s;
+}
+
+.dropdown--list {
+  list-style: none;
+}
+
+.dropdown-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.dropdown-span {
+  font-size: 1.4rem;
+}
