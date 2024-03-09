@@ -61,15 +61,15 @@ input {
   display: none;
 }
 
-/*Header*/
+/*HEADER*/
 
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+  background-color: var(--white);
 }
 
 .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   padding: 2rem;
 }
@@ -129,7 +129,7 @@ input {
 .dropdown {
   position: absolute;
   background-color: var(--brown);
-  width: 40%;
+  width: 50%;
   right: 0;
   top: 0;
   bottom: 0;
@@ -151,6 +151,111 @@ input {
   text-decoration: none;
 }
 
+.dropdown-link:hover {
+  border-bottom: 3px solid var(--pink);
+  border-radius: 5px;
+  padding: 4px 0;
+}
+
 .dropdown-span {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+/*MAIN*/
+.main {
+  width: 100%;
+}
+
+/*front-page*/
+
+.front__page__mobile {
+  width: 100%;
+  background-image: url(/Mobile-img/TELEFONO/portada-fotos/11WEB_DR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front--page--help {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-front-page {
+  width: 90px;
+  padding-bottom: 1rem;
+}
+
+.title-front-page {
+  color: var(--white);
+  font-size: 25px;
+  line-height: 27px;
+}
+
+.subtitle-front-page {
+  font-size: 8px;
+  color: var(--white);
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.copy-front-page {
+  font-size: 22px;
+  max-width: 50%;
+  line-height: 28px;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.span-front-page {
+  font-weight: 600;
+}
+
+/*schedules*/
+
+.schedules__page {
+  width: 100%;
+  background-image: url(/Mobile-img/TELEFONO/portada-fotos/WEB_DRportada-14.png);
+}
+
+.schedules--help {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.schedules-page-title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 2.5rem;
+}
+
+.clock-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.clock-icon {
+  width: 30px;
+}
+
+.clock-copy {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.schedules-copy {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.span-schedules {
+  font-weight: 600;
 }
