@@ -129,6 +129,8 @@ input {
 .dropdown {
   position: absolute;
   background-color: var(--brown);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   width: 50%;
   right: 0;
   top: 0;
@@ -220,7 +222,7 @@ input {
   background-image: url(/Mobile-img/TELEFONO/portada-fotos/WEB_DRportada-14.png);
 }
 
-.schedules--help {
+.helper {
   padding: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -256,6 +258,21 @@ input {
   font-size: 16px;
 }
 
+.schedules-copy-border {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 5px;
+}
+
+.schedules-copy-padding {
+  padding-top: 5px;
+}
+
 .span-schedules {
   font-weight: 600;
+}
+
+/*Our services*/
+
+.services {
+  background-color: var(--pink);
 }
