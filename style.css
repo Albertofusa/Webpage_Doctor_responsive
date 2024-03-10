@@ -178,7 +178,7 @@ input {
   background-size: cover;
 }
 
-.front--page--help {
+.helper--front--page {
   padding: 4rem 2rem;
   max-width: 1200px;
   width: 100%;
@@ -275,4 +275,62 @@ input {
 
 .services {
   background-color: var(--pink);
+  text-align: center;
+}
+
+.title-services {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.copy-services {
+  font-size: 13px;
+  color: gray;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+
+.services--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services-box {
+  padding: 2rem;
+}
+
+.services--container div {
+  background-color: white;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.services--container h3 {
+  font-size: 18px;
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+
+.services--container p {
+  font-size: 13px;
+  padding-bottom: 5rem;
+}
+
+.button-services {
+  padding: 1rem 8rem;
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+@media (min-width: 1200px) {
+  .helper--services {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+  }
 }
