@@ -65,6 +65,8 @@ input {
 
 .header {
   background-color: var(--white);
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -128,17 +130,17 @@ input {
 
 .dropdown {
   position: absolute;
+  right: 0;
+  top: 0;
   background-color: var(--brown);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 50%;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
   padding: 1rem;
   display: grid;
   align-content: center;
-  gap: 10rem;
+  gap: 4rem;
   overflow-y: auto;
   clip-path: var(--clip, inset(0 0 0 100%));
   transition: clip-path 0.5s;
@@ -276,6 +278,7 @@ input {
 .services {
   background-color: var(--pink);
   text-align: center;
+  padding: 2rem 0;
 }
 
 .title-services {
@@ -324,6 +327,33 @@ input {
   cursor: pointer;
   font-size: 15px;
   border-radius: 20px;
+}
+
+.partners {
+  background-color: var(--pink);
+  text-align: center;
+}
+
+.title-partners {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 4rem;
+}
+
+.title-partners-strong {
+  font-weight: 800;
+}
+
+.img-partnes-contain {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  width: 100%;
+}
+
+.img-partnes {
+  width: 200px;
+  object-fit: cover;
 }
 
 @media (min-width: 1200px) {
