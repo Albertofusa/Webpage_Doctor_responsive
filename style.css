@@ -45,11 +45,11 @@ input {
 
 /*Reset*/
 
-.nabvar-desktop-numbers {
+.nabvar__desktop__socila__media {
   display: none;
 }
 
-.nabvar__desktop__socila__media {
+.logo {
   display: none;
 }
 
@@ -57,7 +57,11 @@ input {
   display: none;
 }
 
-.logo {
+.img-front-page-desktop {
+  display: none;
+}
+
+.before-after-sofia {
   display: none;
 }
 
@@ -135,7 +139,7 @@ input {
   background-color: var(--brown);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 50%;
+  width: 40%;
   height: 100vh;
   padding: 1rem;
   display: grid;
@@ -170,21 +174,39 @@ input {
   width: 100%;
 }
 
+.helper {
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*front-page*/
 
 .front__page__mobile {
   width: 100%;
-  background-image: url(/Mobile-img/TELEFONO/portada-fotos/11WEB_DR.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 2rem 0;
+  background-color: var(--brown);
 }
 
 .helper--front--page {
-  padding: 4rem 2rem;
+  padding: 0 2rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.front--page--container {
+  width: 100%;
+  display: flex;
+}
+
+.front--page--container div {
+  flex: 1;
+}
+
+.front-page-content-copy {
+  width: 100%;
 }
 
 .logo-front-page {
@@ -207,7 +229,6 @@ input {
 
 .copy-front-page {
   font-size: 22px;
-  max-width: 50%;
   line-height: 28px;
   color: var(--white);
   font-weight: 300;
@@ -217,18 +238,18 @@ input {
   font-weight: 600;
 }
 
+.img-front-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*schedules*/
 
 .schedules__page {
   width: 100%;
-  background-image: url(/Mobile-img/TELEFONO/portada-fotos/WEB_DRportada-14.png);
-}
-
-.helper {
-  padding: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: var(--blue);
 }
 
 .schedules-page-title {
@@ -276,9 +297,9 @@ input {
 /*Our services*/
 
 .services {
+  padding: 2rem 0;
   background-color: var(--pink);
   text-align: center;
-  padding: 2rem 0;
 }
 
 .title-services {
@@ -329,13 +350,48 @@ input {
   border-radius: 20px;
 }
 
-/*carousel*/
+/*after__before*/
+
+.after__before {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--brown);
+}
+
+.after--before--container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.after--before--container div {
+  flex: 1;
+}
+
+.img-before-after {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.before-after-title {
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.before-after-copy {
+  color: var(--white);
+  font-size: 13px;
+}
 
 /*partners*/
 
 .partners {
   background-color: var(--pink);
   text-align: center;
+  padding: 2rem 0;
+  width: 100%;
 }
 
 .title-partners {
@@ -350,7 +406,7 @@ input {
 
 .img-partnes-contain {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   place-items: center;
   width: 100%;
@@ -362,6 +418,10 @@ input {
 }
 
 /*Collapsible*/
+
+.collapsee {
+  width: 100%;
+}
 
 .collapse--container {
   display: flex;
@@ -427,6 +487,7 @@ input {
 
 .footer {
   width: 100%;
+  padding: 2rem 0;
   background-image: url(/Mobile-img/TELEFONO/portada-fotos/WEB_DRportada-14.png);
 }
 
@@ -482,11 +543,70 @@ input {
   width: 30px;
 }
 
-@media (min-width: 1200px) {
-  .helper--services {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 2rem;
+/*RESPONSIVE*/
+
+@media (min-width: 800px) {
+  /*Navbar*/
+  .nav__dropdown {
+    display: none;
   }
+
+  .nabvar__desktop__socila__media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .icon-redes-desktop {
+    width: 15px;
+  }
+
+  .logo {
+    display: block;
+    width: 110px;
+  }
+
+  .nabvar__desktop__links {
+    display: block;
+    width: 100%;
+    padding: 2rem 0 0 0;
+  }
+
+  .nabvar--desktop--links--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nabvar--desktop--links--content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .link-nabvar {
+    color: var(--brown);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+
+  .button-services-nav {
+    padding: 6px 2rem;
+    background-color: var(--brown);
+    font-size: 14px;
+  }
+
+  /*Front-page*/
+
+  .img-front-page {
+    display: none;
+  }
+}
+
+/*MEDIAQUERIE 1200PX*/
+
+@media (min-width: 1200px) {
+  /*front-page*/
 }
