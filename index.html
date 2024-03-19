@@ -164,7 +164,7 @@
       <!--schedules-->
       <section class="schedules__page">
         <article class="helper">
-          <a class="schedules-page-title" href="tel:+529983715541"
+          <a class="schedules-page-title" href="tel:+529981913744"
             >Llámanos: +52 1 998 191 3744</a
           >
           <div>
@@ -218,7 +218,7 @@
                   que también impulsa el metabolismo y aumenta la sensación de
                   saciedad en el paciente.
                 </p>
-                <a href="https://wa.me//529983715541">
+                <a href="https://wa.me//529981913744">
                   <button class="button-services">Cotiza</button></a
                 >
               </div>
@@ -243,7 +243,7 @@
                   detalladamente con el equipo médico antes de tomar una
                   decisión.
                 </p>
-                <a href="https://wa.me//529983715541">
+                <a href="https://wa.me//529981913744">
                   <button class="button-services">Cotiza</button></a
                 >
               </div>
@@ -254,21 +254,67 @@
       <!--carrousel-->
       <section class="after__before">
         <article class="helper">
-          <div class="after--before--container">
-            <div>
-              <img
-                class="img-before-after"
-                src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-19.png"
-                alt="foto"
-              />
+          <div class="gallery-wrap">
+            <!--img-->
+            <img
+              id="backbtn"
+              src="/Mobile-img/TELEFONO/iconos/WEB_DR_ICONOS-09.png"
+              alt="arrow"
+            />
+            <div class="gallery">
+              <div>
+                <!--1-->
+                <span
+                  ><img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-19.png"
+                    alt="foto"
+                  />
+                </span>
+                <!--2-->
+                <span>
+                  <img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-18.png"
+                    alt="foto"
+                  />
+                </span>
+                <!--3-->
+                <span
+                  ><img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-19.png"
+                    alt="foto"
+                  />
+                </span>
+              </div>
+              <div>
+                <!--1-->
+                <span
+                  ><img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-19.png"
+                    alt="foto"
+                  />
+                </span>
+                <!--2-->
+                <span>
+                  <img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-18.png"
+                    alt="foto"
+                  />
+                </span>
+                <!--3-->
+                <span
+                  ><img
+                    src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-19.png"
+                    alt="foto"
+                  />
+                </span>
+              </div>
             </div>
-            <div>
-              <img
-                class="img-before-after"
-                src="/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_cuer-18.png"
-                alt="foto"
-              />
-            </div>
+            <!--img-->
+            <img
+              id="nextbtn"
+              src="/Mobile-img/TELEFONO/iconos/WEB_DR_ICONOS-09.png"
+              alt="arrow"
+            />
           </div>
         </article>
       </section>
@@ -540,5 +586,26 @@
       </div>
     </footer>
     <!--carousel-->
+    <script>
+      let scrollContainer = document.querySelector(".gallery");
+      let backbtn = document.getElementById("backbtn");
+      let nextbtn = document.getElementById("nextbtn");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+      });
+
+      nextbtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+      });
+
+      backbtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+      });
+    </script>
   </body>
 </html>

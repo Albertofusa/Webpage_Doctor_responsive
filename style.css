@@ -351,8 +351,55 @@ input {
 
 .after__before {
   width: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
   background-color: var(--brown);
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-gallery {
+  width: 200px;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backbtn,
+#nextbtn {
+  width: 30px;
+  cursor: pointer;
+  margin: 4px;
+  transform: rotate(90deg);
+}
+
+#nextbtn {
+  transform: rotate(270deg);
 }
 
 /*partners*/
