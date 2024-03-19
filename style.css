@@ -61,10 +61,6 @@ input {
   display: none;
 }
 
-.before-after-sofia {
-  display: none;
-}
-
 /*HEADER*/
 
 .header {
@@ -199,6 +195,7 @@ input {
 .front--page--container {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
 .front--page--container div {
@@ -256,13 +253,13 @@ input {
   color: var(--white);
   font-size: 20px;
   font-weight: 600;
-  padding-bottom: 2.5rem;
 }
 
 .clock-box {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -356,33 +353,6 @@ input {
   width: 100%;
   padding: 2rem 0;
   background-color: var(--brown);
-}
-
-.after--before--container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.after--before--container div {
-  flex: 1;
-}
-
-.img-before-after {
-  width: 100%;
-  padding-bottom: 1rem;
-}
-
-.before-after-title {
-  color: var(--white);
-  font-size: 17px;
-  font-weight: 600;
-  padding-bottom: 2rem;
-}
-
-.before-after-copy {
-  color: var(--white);
-  font-size: 13px;
 }
 
 /*partners*/
