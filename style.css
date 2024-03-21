@@ -1245,8 +1245,34 @@ input {
     background-color: var(--white);
   }
 
+  .title-surgery {
+    font-size: 25px;
+    padding-bottom: 1rem;
+  }
+
+  .copy-surgery {
+    font-size: 14px;
+    padding-bottom: 6rem;
+  }
+
+  .surgery--container--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
+  .surgery--content-flex {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .surgery-copy-text {
+    font-size: 14px;
+  }
+
   .check-green {
-    width: 20px;
+    width: 22px;
   }
 
   /*FOOTER*/
