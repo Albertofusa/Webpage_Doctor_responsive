@@ -1293,7 +1293,7 @@ input {
 
   .box-footer {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     display: grid;
     place-items: center;
   }
@@ -1303,25 +1303,31 @@ input {
     place-items: center;
   }
 
+  .box-footer-img {
+    display: grid;
+    place-items: start;
+  }
+
   .logo--footer {
-    width: 150px;
-    padding-bottom: 2rem;
+    width: 170px;
+    padding-bottom: 3rem;
   }
 
   .copy-footer-logo {
-    font-size: 14px;
+    font-size: 15px;
     max-width: 88%;
     color: var(--white);
+    text-align: left;
   }
 
   .title-footer {
-    font-size: 18 px;
+    font-size: 24px;
     color: var(--white);
   }
 
   .copy-footer {
     color: var(--white);
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .content-footer-redes-sociales {
@@ -1333,6 +1339,6 @@ input {
   }
 
   .icon-redes {
-    width: 30px;
+    width: 28px;
   }
 }
