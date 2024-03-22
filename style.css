@@ -331,6 +331,10 @@ input {
 
 .services-box {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .services--container div {
@@ -347,7 +351,6 @@ input {
 
 .services--container p {
   font-size: 13px;
-  padding-bottom: 5rem;
 }
 
 .button-services {
@@ -357,6 +360,15 @@ input {
   cursor: pointer;
   font-size: 15px;
   border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.button-services:active {
+  transform: scale(0.96);
+}
+
+.button-services:hover {
+  background-color: var(--brown);
 }
 
 /*after__before*/
@@ -565,7 +577,17 @@ input {
 }
 
 .icon-redes {
-  width: 30px;
+  font-size: 40px;
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.icon-redes :active {
+  transform: scale(0.96);
+}
+
+.icon-redes :hover {
+  color: var(--brown);
 }
 
 /*RESPONSIVE*/
@@ -648,7 +670,17 @@ input {
   }
 
   .icon-redes-desktop {
-    width: 15px;
+    font-size: 27px;
+    color: var(--brown);
+    transition: all 0.2s ease;
+  }
+
+  .icon-redes-desktop :active {
+    transform: scale(0.96);
+  }
+
+  .icon-redes-desktop :hover {
+    color: var(--blue);
   }
 
   .logo {
@@ -671,7 +703,7 @@ input {
   .nabvar--desktop--links--content {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .link-nabvar {
@@ -680,6 +712,16 @@ input {
     font-size: 14px;
     font-weight: 600;
     padding: 5px 10px;
+    transition: all 0.2s ease;
+  }
+
+  .link-nabvar:active {
+    transform: scale(0.96);
+  }
+
+  .link-nabvar:hover {
+    color: var(--blue-light);
+    border-bottom: 2px solid var(--brown);
   }
 
   .button-services-nav {
@@ -689,6 +731,15 @@ input {
     color: var(--white);
     cursor: pointer;
     border-radius: 20px;
+    transition: all 0.2s ease;
+  }
+
+  .button-services-nav:active {
+    transform: scale(0.96);
+  }
+
+  .button-services-nav:hover {
+    background-color: var(--blue);
   }
 
   /*Front-page*/
@@ -735,7 +786,8 @@ input {
   }
 
   .icon-redes-desktop {
-    width: 18px;
+    font-size: 28px;
+    color: var(--brown);
   }
 
   .button-services-nav {
@@ -904,7 +956,8 @@ input {
   }
 
   .icon-redes-desktop {
-    width: 19px;
+    font-size: 32px;
+    color: var(--brown);
   }
 
   .button-services-nav {
@@ -1011,11 +1064,17 @@ input {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-content: center;
     gap: 1rem;
   }
 
   .services-box {
-    padding: 2rem 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
   }
 
   .services--container div {
@@ -1023,7 +1082,6 @@ input {
     border-radius: 10px;
     flex: 1;
     text-align: center;
-    padding: 1rem;
   }
 
   .services--container h3 {
@@ -1034,7 +1092,6 @@ input {
 
   .services--container p {
     font-size: 15px;
-    padding-bottom: 5rem;
   }
 
   .button-services {
@@ -1044,6 +1101,10 @@ input {
     cursor: pointer;
     font-size: 17px;
     border-radius: 20px;
+  }
+
+  .button-services-gastrica {
+    margin-top: 4.7rem;
   }
 
   /*partners*/
@@ -1107,6 +1168,17 @@ input {
   .collapse--container--main {
     padding: 5rem 2rem;
     background-color: var(--pink);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(245, 242, 242, 1) 0%,
+      rgba(220, 220, 220, 1) 1%,
+      rgba(220, 220, 220, 1) 2%,
+      rgba(220, 220, 220, 1) 3%,
+      rgba(220, 220, 220, 1) 3%,
+      rgba(246, 246, 246, 1) 100%
+    );
   }
 
   .collapse--container div {
@@ -1169,7 +1241,8 @@ input {
   }
 
   .icon-redes-desktop {
-    width: 20px;
+    font-size: 34px;
+    color: var(--brown);
   }
 
   .button-services-nav {
@@ -1348,16 +1421,35 @@ input {
   }
 
   .icon-redes {
-    width: 40px;
+    font-size: 55px;
+    color: var(--white);
   }
 }
+
+/*MEDIAQUERIE 1300px*/
+
+@media (min-width: 1300px) {
+  /*front-page*/
+
+  .front__page__mobile {
+    width: 100%;
+    padding: 11rem 0;
+    background-color: none;
+    background-image: url(/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_DESKOP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/*MEDIAQUERIE 1440px*/
 
 @media (min-width: 1440px) {
   /*front-page*/
 
   .front__page__mobile {
     width: 100%;
-    padding: 13rem 0;
+    padding: 14rem 0;
     background-color: none;
     background-image: url(/Desktop-img/DESKT-20240315T081030Z-001/DESKT/POSTADA-FOTO/WEB_DR_DESKOP.png);
     background-position: center;
