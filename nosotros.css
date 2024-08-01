@@ -1,0 +1,13 @@
+.helper-nosotros-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content__nosotros {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
