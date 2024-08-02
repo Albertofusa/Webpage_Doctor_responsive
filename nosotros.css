@@ -8,6 +8,44 @@
 .content__nosotros {
   width: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   flex-direction: column;
+}
+
+.title__nosotros {
+  color: var(--brown);
+  padding-bottom: 2rem;
+  font-size: 22px;
+}
+
+.subtitle__nosotros {
+  padding: 1rem 0;
+  font-size: 17px;
+  color: var(--blue);
+}
+
+.text__nosotros {
+  font-size: 12px;
+}
+
+.button__nosotros {
+  padding: 1.2rem 5rem;
+  border-radius: 1rem;
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 17px;
+}
+
+.button__nosotros:active {
+  transform: scale(0.96);
+}
+
+.content__butto--whats-nosotros {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
