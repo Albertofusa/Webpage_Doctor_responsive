@@ -28,6 +28,10 @@
   font-size: 12px;
 }
 
+.img--nosotros {
+  padding-bottom: 2rem;
+}
+
 .button__nosotros {
   padding: 1.2rem 5rem;
   border-radius: 1rem;
@@ -48,4 +52,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*MEDIAQUERIE 900PX*/
+
+@media (min-width: 900px) {
+  .content__nosotros {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+  }
 }
