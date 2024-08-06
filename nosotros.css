@@ -61,7 +61,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 7rem 2rem 2rem 2rem;
+    padding: 7rem 2rem 7rem 2rem;
   }
 
   .content__nosotros {
@@ -69,5 +69,21 @@
     display: flex;
     gap: 5rem;
     flex-direction: row;
+  }
+
+  .title__nosotros {
+    color: var(--brown);
+    padding-bottom: 2rem;
+    font-size: 24px;
+  }
+
+  .subtitle__nosotros {
+    padding: 1rem 0;
+    font-size: 20px;
+    color: var(--blue);
+  }
+
+  .text__nosotros {
+    font-size: 15px;
   }
 }
