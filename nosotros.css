@@ -46,6 +46,11 @@
   transform: scale(0.96);
 }
 
+.button__nosotros i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
 .content__butto--whats-nosotros {
   width: 100%;
   padding: 2rem 0;
